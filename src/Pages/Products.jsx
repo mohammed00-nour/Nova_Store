@@ -30,7 +30,7 @@ export default function Products() {
         <p style={{ fontSize: "16px", lineHeight: "145%", color: "#6b7280" }}>UProducts loaded from the DummyJSON API.</p>
         <p className="numberProducts" style={{ fontSize: "16px", color: "#a65d00", fontWeight: "bold", background: "#fef3c7", padding: "0.25rem 0.5rem", borderRadius: "10px" }}><span style={{ fontWeight: "bold" , fontSize: "16px"}}>{data.products.length}</span> Products</p>
       </div>
-      <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px"}}>
+      <div className="allProducts" style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px"}}>
         {data.products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

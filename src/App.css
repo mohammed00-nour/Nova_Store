@@ -196,7 +196,7 @@
  
 
 }
-.inputManga:focus {
+.inputManage:focus {
   border: 1px solid #f59e0b !important;
   box-shadow: 2px 2px 4px #f59e0b !important;
 }
@@ -235,4 +235,21 @@
     width: 100px !important;
     /* padding: 0.2rem 0.4rem !important; */
   } 
+}
+@media(max-width: 480px) {
+  .formManage{
+    width: 100% !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+  .feildOfForm{
+    width: 100% !important;
+    margin: 0 1rem 0 0 !important;
+    
+  } 
+  .allProducts{
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important; */
+    margin: 10px auto !important;
+  }
+
 }
